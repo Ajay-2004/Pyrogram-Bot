@@ -12,7 +12,7 @@ Mikasa=Client(
 START_PIC = [
   "https://telegra.ph/file/570f62a57bbd6c7263df9.jpg",
   "https://telegra.ph/file/e3327443ac3ab5e6c4daa.jpg",
-  "https://telegra.ph/file/e3327443ac3ab5e6c4daa.jpg"
+  "https://telegra.ph/file/feae2a0fe4fc4388ca385.jpg"
 ]  
 
 
