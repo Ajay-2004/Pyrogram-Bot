@@ -11,8 +11,9 @@ Mikasa=Client(
 
 @Mikasa.on_message(filters.command("Start"))
 async def start_msg(bot: Mikasa, msg: Message):
-  await msg.reply_text(
-    text="I'm Mikasa ㊗️, an file store bot with greater abilities",
+  await msg.reply_photo(
+    photo="https://telegra.ph/file/570f62a57bbd6c7263df9.jpg",
+    caption="I'm Mikasa ㊗️, an file store bot with greater abilities",
     reply_markup=InlineKeyboardMarkup( [[
       InlineKeyboardButton("CHANNEL", url="https://t.me/+7xdSoB4FSkphZTE1"),
       InlineKeyboardButton("GROUP", url="https://t.me/doflix_studios")
