@@ -18,9 +18,12 @@ START_PIC = [
 
 @Mikasa.on_message(filters.command("Start"))
 async def start_msg(bot: Mikasa, msg: Message):
+  Caption = """
+  Hi 👋🏻,
+  I'm Mikasa ㊗️, an file store bot with greater abilities."""
   await msg.reply_photo(
     photo=random.choice(START_PIC),
-    caption="I'm Mikasa ㊗️, an file store bot with greater abilities",
+    caption= Caption,
     reply_markup=InlineKeyboardMarkup( [[
       InlineKeyboardButton("CHANNEL", url="https://t.me/+7xdSoB4FSkphZTE1"),
       InlineKeyboardButton("GROUP", url="https://t.me/doflix_studios")
