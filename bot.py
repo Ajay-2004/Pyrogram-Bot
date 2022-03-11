@@ -12,11 +12,12 @@ Mikasa=Client(
 @Mikasa.on_message(filters.command("Start"))
 async def start_msg(bot: Mikasa, msg: Message):
   await msg.reply_text(
-    text="I'm Mikasa㊗️, an file store bot with greater abilities",
+    text="I'm Mikasa ㊗️, an file store bot with greater abilities",
     reply_markup=InlineKeyboardMarkup( [[
-      InlineKeyboardButton("Çhåññêl", url="https://t.me/+7xdSoB4FSkphZTE1"),
-      InlineKeyboardButton("Grðµþ" , url="https://t.me/doflix_studios")
-      
+      InlineKeyboardButton("CHANNEL", url="https://t.me/+7xdSoB4FSkphZTE1"),
+      InlineKeyboardButton("GROUP", url="https://t.me/doflix_studios")
+    ],[
+      InlineKeyboardButton("HELP", url="https://t.me/doflix_support")
       
       
     
