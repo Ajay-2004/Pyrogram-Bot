@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-
+import random
 
 Mikasa=Client(
   "File Store Bot",
@@ -9,10 +9,17 @@ Mikasa=Client(
   api_hash='c54613404f9bcdbd0c90171e346de396'
 )
 
+START_PIC = [
+  "https://telegra.ph/file/570f62a57bbd6c7263df9.jpg",
+  "https://telegra.ph/file/e3327443ac3ab5e6c4daa.jpg",
+  "https://telegra.ph/file/e3327443ac3ab5e6c4daa.jpg"
+]  
+
+
 @Mikasa.on_message(filters.command("Start"))
 async def start_msg(bot: Mikasa, msg: Message):
   await msg.reply_photo(
-    photo="https://telegra.ph/file/570f62a57bbd6c7263df9.jpg",
+    photo=random.choice(START_PIC),
     caption="I'm Mikasa ㊗️, an file store bot with greater abilities",
     reply_markup=InlineKeyboardMarkup( [[
       InlineKeyboardButton("CHANNEL", url="https://t.me/+7xdSoB4FSkphZTE1"),
