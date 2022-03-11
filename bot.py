@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrogram.types import Message
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 Mikasa=Client(
@@ -11,7 +11,21 @@ Mikasa=Client(
 
 @Mikasa.on_message(filters.command("Start"))
 async def start_msg(bot: Mikasa, msg: Message):
-  await msg.reply_text("<b>Hi 👋</b>🏻")
+  await msg.reply_text(
+    text="I'm Mikasa㊗️, an file store bot with greater abilities",
+    reply_markup=InlineKeyboardMarkup( [[
+      InlineKeyboardButton("ᄃΉΛППΣᄂ", url="https://t.me/+7xdSoB4FSkphZTE1")
+    ]]
+    )
+  )
+    
+      
+    
+    
+    
+    
+    
+    
 
 @Mikasa.on_message(filters.command("Help"))
 async def help_msg(bot: Mikasa, msg: Message):
