@@ -12,6 +12,10 @@ Mikasa=Client(
 @Mikasa.on_message(filters.command("Start"))
 async def start_msg(bot, msg):
   await msg.reply_text("<b>Hi 👋</b>🏻")
+
+@Mikasa.on_message(filters.command("Help"))
+async def help_msg(bot, msg):
+  await msg.reply_text("<b>Help</b>🏻")
   
 Mikasa.run()
   
