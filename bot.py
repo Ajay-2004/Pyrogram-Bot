@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-
+from pyrogram.types import Message
 
 
 Mikasa=Client(
@@ -10,11 +10,11 @@ Mikasa=Client(
 )
 
 @Mikasa.on_message(filters.command("Start"))
-async def start_msg(bot, msg):
+async def start_msg(bot: Mikasa, msg: Message):
   await msg.reply_text("<b>Hi 👋</b>🏻")
 
 @Mikasa.on_message(filters.command("Help"))
-async def help_msg(bot, msg):
+async def help_msg(bot: Mikasa, msg: Message):
   await msg.reply_text("<b>Help</b>🏻")
   
 Mikasa.run()
